@@ -11,7 +11,6 @@ void TrimRight(char *s) {
         return;
     }
 
-    // Итерируемся с конца строки, удаляя пробелы.
     for (int i = length - 1; i >= 0; --i) {
         if (s[i] == ' ') {
             s[i] = '\0';
