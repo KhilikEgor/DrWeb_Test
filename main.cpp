@@ -86,18 +86,15 @@ int main()
     {
         DictionaryImpl<KeyType, ValueType> dictionary;
 
-        // Add keys
         dictionary.set(1, 1);
         dictionary.set(2, 1);
         dictionary.set(3, 1);
 
-        // Check is set keys
         std::cout << "> Is set 1? " << std::boolalpha << dictionary.is_set(1) << std::endl;
         std::cout << "> Is set 2? " << std::boolalpha << dictionary.is_set(2) << std::endl;
         std::cout << "> Is set 3? " << std::boolalpha << dictionary.is_set(3) << std::endl;
         std::cout << "> Is set 4? " << std::boolalpha << dictionary.is_set(4) << std::endl;
 
-        // Get value from keys
         std::cout << "> Key 1: " << dictionary.get(1) << std::endl;
         std::cout << "> Key 2: " << dictionary.get(2) << std::endl;
         std::cout << "> Key 3: " << dictionary.get(3) << std::endl;
